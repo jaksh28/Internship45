@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script src="jquery-3.7.1.js"></script>
+        <script src="jquery.validate.js"></script>
+        <script>
+            $(document).ready(function(){ 
+              $("#myform").validate();
+            })
+        </script>
+        <style>
+            .error{
+                color:red
+            }
+        </style>
+    </head>
+    <body>
+        <form id="myform">
+            Name:<input type="text" name="txt1" required/><br/>
+            Mobile  Number:<input type="number" name="txt2" required/><br/>
+            E mail:<input type="email" name="txt3" required/><br/>
+            <input type="submit"/>
+        </form>
+    </body>
+</html>
