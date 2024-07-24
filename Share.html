@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share Buy and Sell</title>
+    <link rel="stylesheet" href="Share.css">
+</head>
+<body>
+    <header>
+        <h1>Share Buy and Sell</h1>
+    </header>
+    <main>
+        <section class="balance">
+            <h2>Your Balance: <span id="balance">$1000</span></h2>
+        </section>
+        <section class="market">
+            <h2>Market</h2>
+            <div class="share">
+                <span>Company A: $<span id="priceA">100</span></span>
+                <button onclick="buyShare('A')">Buy</button>
+                <button onclick="sellShare('A')">Sell</button>
+            </div>
+            <div class="share">
+                <span>Company B: $<span id="priceB">150</span></span>
+                <button onclick="buyShare('B')">Buy</button>
+                <button onclick="sellShare('B')">Sell</button>
+            </div>
+        </section>
+        <section class="portfolio">
+            <h2>Your Portfolio</h2>
+            <div>Company A: <span id="sharesA">0</span> shares</div>
+            <div>Company B: <span id="sharesB">0</span> shares</div>
+        </section>
+    </main>
+    <script src="Share.js"></script>
+</body>
+</html>

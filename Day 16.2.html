@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <form>
+            FirstName:<input type="text" name="txtF" /> <br /><br />
+            MiddleName:<input type="text" name="txtM" /> <br /><br />
+            LastName:<input type="text" name="txtL" /> <br /><br />
+            <input type="button" value="show Data" onclick="show()" /><br /><br />
+            <p id="txtAns"></p>
+        </form>
+        <script>
+            function show(){
+                fname = document.getElementsByName("txtF")[0].value;
+                mname = document.getElementsByName("txtM")[0].value;
+                lname = document.getElementsByName("txtL")[0].value;
+                ans = fname + " " + mname + " " + lname;
+                document.getElementById("txtAns").innerText = ans;
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <form id="myform">
+            No1 : <input type="text" name="txt1"/>
+            No2 : <input type="text" name="txt2"/>
+            <input type="button" onclick="printdata()" value="Click Me"/>
+        </form>
+        <script>
+            function printdata(){
+                var a = myform.txt1.value;
+                var b = myform.txt2.value;
+                var c = parseInt(a) + parseInt(b);
+                document.write("A value is ",a,"<br/>B value is ",b,",<br/>Sum is ",c);
+            }
+        </script>
+    </body>
+</html>

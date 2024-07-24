@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <form id="myform">
+            No1 : <input type="text" name="txt1"/> <br/>
+            No2 : <input type="text" name="txt2"/> <br/>
+            Sum : <input type="text" name="txt3" readonly disabled/> <br/>
+            <input type="button" onclick="printData()" value="Click Me"/>
+        </form>
+        <script>
+            function printData(){
+                var a = myform.txt1.value;
+                var b = myform.txt2.value;
+                var c = parseInt(a) + parseInt(b);
+                myform.txt3.value = c;
+            }
+        </script>
+    </body>
+</html>

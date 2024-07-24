@@ -1,0 +1,15 @@
+<html>
+    <body>
+        <form id="myform">
+            Name : <input type="text" name="txt1"/> <br/>
+            Value : <input type="text" name="txt2" readonly disabled/> <br/>
+            <input type="button" onclick="printData()" value="Click me"/> 
+        </form>
+        <script>
+            function printData(){
+                var a = myform.txt1.value;
+                myform.txt2.value = a;
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,14 @@
+<html>
+    <body>
+        <form id="myform">
+            Name: <input type="text" name="txt1">
+            <input type="button" value="GetData" onClick="getData()"/>
+        </form>
+        <script>
+            function getData(){
+                var a = myform.txt1.value;
+                document.write("A value is ",a);
+            }
+        </script>
+    </body>
+</html>
